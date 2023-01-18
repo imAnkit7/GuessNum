@@ -1,0 +1,75 @@
+body{
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: wheat;
+    align-items: center;
+    margin: auto;
+}
+main{
+    /* height:90vh; */
+    width: 30vw;
+    text-align: center;
+    background-color: white;
+    border: solid wheat;
+    border-width:0.8rem;
+    border-radius: 1rem;
+    /* padding: 8rem 5rem; */
+}
+.image{
+   width:25vw ;
+}
+.btn1{
+    width: 15vw;
+    height: 39px;
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btn2{
+    width: 15vw;
+    height:39px;
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.btnh:hover{
+ background-color: rgb(90, 90, 253);
+}
+.gameArea{
+    margin: 2rem;
+}
+.hh{
+    font-size:1.8vw;
+}
+#suggest{
+    margin-top:25px; color:blue;font-size:1.5vw;
+}
+@media screen and (max-width:590px) {
+   main{
+    width: 78vw;
+    /* height: 130vw; */
+   }
+   .hh{
+    font-size:5vw;
+   }
+   .image{
+    width:60vw ;
+ }
+ #suggest{
+    font-size: 4vw;
+ }
+ .btn1{
+    width: 55vw;
+    height: 27px;
+}
+
+.btn2{
+    width: 55vw;
+    height:27px;
+}
+}

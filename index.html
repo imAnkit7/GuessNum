@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="init()">
+    <main>
+    <div class="container">
+        <h2 class="hh">Guess the number between 1 and 100</h2>
+        <img class="image" style="margin: 10px;" src="bgame.avif" alt=""><br>
+        <h3>select difficulty level</h3>
+        <div class="button">
+        <button class="btnh  btn1" onclick="easymod()" style="margin: 10px;">easy 10 attempts</button><br>
+        <button class="btnh  btn2" onclick="hardmod()" style="margin: 10px;">hard 5 attempts</button>
+     </div>
+    </div>
+    <div class="gameArea" >
+        <div class="button2">
+            <button class="btnh  btn2 newbtn" onclick="newGame()">New Game</button>
+        </div>
+        <div id="suggest"><span>Enter your guess</span></div>
+        <section>
+            <div id="input"><input  id="inputNum" style="margin:30px;padding:7px;" type="number" min="1" max="100" placeholder="enter number (guess)" onchange="compareGuess()"/></div>
+        </section>
+        <section class="stats">
+            <div class="info" style="margin:10px;">
+                <p>Number of previous attempts</p>
+                <span id="att1" style="color:red;">0</span>
+            </div>
+        <section class="stats">
+            <div class="info">
+                <p>Number of previous guesses</p>
+                <span id="att2" style="color:red;">0</span>
+            </div>
+        </section>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
